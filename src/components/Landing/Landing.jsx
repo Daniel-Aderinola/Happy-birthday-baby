@@ -28,7 +28,7 @@ const Landing = ({ onStart }) => {
         <h1 className={styles["landing-title"]}>
           To My Forever
           {/* 💡 Replace "My Love" with her name for a personal touch */}
-          <span>My Love, Seyi.</span>
+          <span>My Love, .</span>
         </h1>
 
         <p className={styles["landing-subtitle"]}>
