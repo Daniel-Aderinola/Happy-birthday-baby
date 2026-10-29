@@ -1,62 +1,46 @@
-import React, { useState, useEffect, useCallback, useRef } from "react";
+import React, { useState, useCallback } from "react";
 import styles from "./Proposal.module.css";
-import img1 from "../../images/1.jpeg";
-import img2 from "../../images/2.jpeg";
-import img3 from "../../images/3.jpeg";
-import img4 from "../../images/4.jpeg";
-import img5 from "../../images/5.jpeg";
-import img6 from "../../images/6.jpeg";
-import img7 from "../../images/7.jpeg";
+import img1 from "../../images/WhatsApp Image 2026-10-29 at 16.26.36.jpeg";
+import img2 from "../../images/WhatsApp Image 2026-10-29 at 16.26.37 (1).jpeg";
+import img3 from "../../images/WhatsApp Image 2026-10-29 at 16.26.37.jpeg";
+import img4 from "../../images/WhatsApp Image 2026-10-29 at 16.26.38.jpeg";
+import img5 from "../../images/WhatsApp Image 2026-10-29 at 16.26.43 (1).jpeg";
+import img6 from "../../images/WhatsApp Image 2026-10-29 at 16.26.44.jpeg";
 
 /**
- * PhotoGallery — Auto-sliding carousel of your photos together 📸
+ * PhotoGallery — A carousel of favorite photos and love quotes.
  */
 
 const photos = [
   {
     src: img1,
-    caption: "You’re my forever kind of beautiful. 💕",
-   
+    caption: "Wherever I am with you feels like exactly where I belong. 💕",
   },
   {
     src: img2,
-    caption: "Our first date — I was so nervous! 😁",
-   
+    caption: "Your smile turns even the simplest day into something beautiful. ✨",
   },
   {
     src: img3,
-    caption: "The vieeeeeeeeeeeeeeew 😍",
-    
+    caption: "In a world full of moments, you are my favorite one. ❤️",
   },
   {
     src: img4,
-    caption: "You make everything feel okay. ❤️",
-    
+    caption: "I choose your hand today, tomorrow, and every day after. 🤝",
   },
   {
     src: img5,
-    caption: "I choose you, today and always.💫",
-    date: "August 2024",
+    caption: "Love is laughing together and still wanting one more moment. 🥰",
   },
   {
     src: img6,
-    caption: "My happy place is with you 🥰",
-    
-  },
-  {
-    src: img7,
-    caption: "Making memories that last forever ✨",
-  
+    caption: "Life is brighter and more fun with you beside me. 💖",
   },
 ];
 
-const AUTO_SLIDE_INTERVAL = 4000; // 4 seconds per slide
-
 const Proposal = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isPaused, setIsPaused] = useState(false);
   const [imageErrors, setImageErrors] = useState({});
-  const intervalRef = useRef(null);
 
   const totalSlides = photos.length;
 
@@ -75,15 +59,7 @@ const Proposal = () => {
     setCurrentIndex(index);
   };
 
-  // Auto-slide timer
-  // useEffect(() => {
-  //   if (isPaused) return;
-
-  //   intervalRef.current = setInterval(nextSlide, AUTO_SLIDE_INTERVAL);
-  //   return () => clearInterval(intervalRef.current);
-  // }, [isPaused, nextSlide]);
-
-  // Handle image load error — show placeholder instead
+  // Show a placeholder if a photo cannot be loaded.
   const handleImageError = (index) => {
     setImageErrors((prev) => ({ ...prev, [index]: true }));
   };
@@ -120,8 +96,8 @@ const Proposal = () => {
       </div>
 
       <div className={styles["gallery-header"]}>
-        <h2>Our Memories Together 📸</h2>
-        <p>Every picture tells a piece of our story 💕</p>
+        <h2>Love in Frames 📸</h2>
+        <p>Six little reminders of why my heart will always choose you. 💕</p>
       </div>
 
       <div className={styles["carousel-wrapper"]}>
@@ -144,13 +120,12 @@ const Proposal = () => {
               <div key={index} className={styles.slide}>
                 <div className={styles["slide-image-wrapper"]}>
                   {imageErrors[index] ? (
-                    // Show a cute placeholder if the image isn't found yet
                     <div className={styles["slide-placeholder"]}>
                       <span className={styles["slide-placeholder-emoji"]}>
                         {placeholderEmojis[index % placeholderEmojis.length]}
                       </span>
                       <span className={styles["slide-placeholder-text"]}>
-                        Add photo to /public/photos/
+                        This photo could not be loaded
                       </span>
                     </div>
                   ) : (

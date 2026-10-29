@@ -13,18 +13,38 @@ import styles from "./ReasonsILoveYou.module.css";
 
 // 💡 REPLACE THESE WITH YOUR REAL REASONS!
 const reasons = [
-  "Your smile makes my entire world brighter ,",
-  "The way you laugh — it's my favorite sound ,",
-  "You believe in me even when I don't ",
-  "Your hugs feel like home ",
-  "I love your strength, even when you don’t see it ",
-  "Your kindness to everyone around you ,",
-  "love that when I think about the future, you naturally appear in it ",
-  "You make the boring moments fun ",
-  "Your passion for the things you love ,",
-  "I love how being with you makes me want to be a better man, not just for you, but for myself too ",
-  "love you because what we have feels genuine — not forced, not rushed, just real ",
-  "Because you chose me — and I'm the luckiest ",
+  "You make me laugh even on my worst days.",
+  "You support me no matter what.",
+  "Your smile lights up my world.",
+  "I love how thoughtful you are.",
+  "You make me want to be a better person.",
+  "I can always be myself around you.",
+  "You make ordinary moments feel special.",
+  "You inspire me every day.",
+  "You listen to me when I need it most.",
+  "You see the best in me.",
+  "I love the way you make me feel loved.",
+  "You give the best hugs.",
+  "You're my home, no matter where we are.",
+  "You're my best friend and my partner in everything.",
+  "I love the way you look at me.",
+  "You make me feel important.",
+  "You're always there when I need you.",
+  "You make me feel special every day.",
+  "You're my safe place.",
+  "You make me feel loved in a million ways.",
+  "I love how we can talk about anything.",
+  "You're my favorite person to be around.",
+  "I love how you take care of me.",
+  "I love the life we're building together.",
+  "I feel complete with you by my side.",
+  "I love the way you care for others.",
+  "You make me feel lucky every day.",
+  "I can be vulnerable with you.",
+  "You never let me face anything alone.",
+  "You love me unconditionally.",
+  "You give the best comfort when I need it.",
+  "I love the way you protect me.",
 ];
 
 const ReasonsILoveYou = () => {
@@ -48,7 +68,7 @@ const ReasonsILoveYou = () => {
       </div>
 
       <div className={styles["reasons-header"]}>
-        <h2>Reasons I Love You</h2>
+        <h2> 32 Reasons I Love You</h2>
         <p>Tap each heart to reveal a reason 💖</p>
       </div>
 

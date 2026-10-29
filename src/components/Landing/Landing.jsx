@@ -23,12 +23,12 @@ const Landing = ({ onStart }) => {
 
       <div className={styles["landing-content"]}>
         {/* 💡 Change this date to something meaningful — your anniversary, the day you met, etc. */}
-        <p className={styles["landing-date"]}>February 14th, 2026</p>
+        <p className={styles["landing-date"]}>October 29th, 2026</p>
 
         <h1 className={styles["landing-title"]}>
           To My Forever
           {/* 💡 Replace "My Love" with her name for a personal touch */}
-          <span>My Love, Seyiii.</span>
+          <span>My Love, Matthias.</span>
         </h1>
 
         <p className={styles["landing-subtitle"]}>
@@ -54,7 +54,7 @@ const Landing = ({ onStart }) => {
         <div className={styles["music-label"]}>🎵 Our Song</div>
         <iframe
           style={{ borderRadius: "8px", overflow: "hidden", display: "block" }}
-          src="https://open.spotify.com/embed/track/1Q7EgiMOuwDcB0PJC6AzON?utm_source=generator&theme=0"
+          src="https://open.spotify.com/embed/track/2Vn3Frlp87Wy8Bgk1AcX3O?utm_source=generator&theme=0"
           width="100%"
           height="152"
           frameBorder="0"

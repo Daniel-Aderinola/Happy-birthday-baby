@@ -1,24 +1,17 @@
 import React, { useState, useEffect, useRef } from "react";
 import styles from "./LoveLetter.module.css";
 
-/**
- * LoveLetter — A heartfelt letter with a typewriter effect.
- *
- * PERSONALIZATION TIPS:
- * - Rewrite the letter text with your own memories and feelings
- * - Change the greeting to her pet name
- * - Update the signature with your name
- */
+const LETTER_TEXT = `
 
-// 💡 PERSONALIZE THIS LETTER — Write from your heart!
-const LETTER_TEXT = `From the moment you walked into my life, everything changed. 
-The world became more colorful, laughter became easier, and love became something I could finally understand.
+Today is all about celebrating you and I just want you to know how grateful I am to have you in my life. You make my days brighter, my heart happier, and my life more beautiful in so many ways.
 
-Every day with you feels like a beautiful dream I never want to wake up from. Your smile lights up even my darkest days, and your love gives me strength I never knew I had.
+I hope this year brings you endless happiness good health, success, and everything you've been dreaming of. 
 
-I want you to know that you are my favorite person, my best friend, and the love of my life. Thank you for being you — perfectly, wonderfully, beautifully you.
+Thank you for your love, your care, and for being such an important part of my life. I hope we create many more beautiful memories together.
 
-I love you more than words could ever say, but I'll spend forever trying anyway. 💕`;
+Enjoy your special day and remember how deeply you're loved.
+
+Once again Happy Birthday My man! I love you so much. 💕`;
 
 const LoveLetter = () => {
   const [displayedText, setDisplayedText] = useState("");
@@ -120,7 +113,7 @@ const LoveLetter = () => {
         className={`${styles["letter-container"]} reveal ${hasStarted ? "visible" : ""}`}
       >
         {/* 💡 Change "My Dearest" to her name or your pet name for her */}
-        <h2 className={styles["letter-greeting"]}>My Dearest Love,</h2>
+        <h2 className={styles["letter-greeting"]}>Happy Birthday, My Husband</h2>
 
         <div className={styles["letter-body"]}>
           {displayedText}

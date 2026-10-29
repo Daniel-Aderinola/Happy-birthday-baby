@@ -5,7 +5,6 @@ import "./App.css";
 import FloatingHearts from "./components/FloatingHearts/FloatingHearts";
 import Landing from "./components/Landing/Landing";
 import LoveLetter from "./components/LoveLetter/LoveLetter";
-import MemoryTimeline from "./components/MemoryTimeline/MemoryTimeline";
 import ReasonsILoveYou from "./components/ReasonsILoveYou/ReasonsILoveYou";
 import MiniGame from "./components/MiniGame/MiniGame";
 import Proposal from "./components/Proposal/Proposal";
@@ -24,7 +23,6 @@ import MusicControl from "./components/MusicControl/MusicControl";
  * 2. The rest of the site smoothly reveals
  * 3. She scrolls through each section:
  *    - Love Letter (typewriter effect)
- *    - Memory Timeline (your love story)
  *    - Reasons I Love You (clickable hearts)
  *    - Mini Game (catch the hearts)
  *    - Will You Be My Valentine? (celebration!)
@@ -33,7 +31,6 @@ import MusicControl from "./components/MusicControl/MusicControl";
  * PERSONALIZATION CHECKLIST:
  * ✅ Update names in Landing.jsx and Closing.jsx
  * ✅ Rewrite the love letter in LoveLetter.jsx
- * ✅ Add your real memories in MemoryTimeline.jsx
  * ✅ Write your real reasons in ReasonsILoveYou.jsx
  * ✅ Add a love song MP3 in /public/love-song.mp3
  * ✅ Add your photos (optional) in the memory cards
@@ -43,7 +40,6 @@ import MusicControl from "./components/MusicControl/MusicControl";
 const sections = [
   "landing",
   "love-letter",
-  "timeline",
   "reasons",
   "game",
   "proposal",
@@ -155,12 +151,7 @@ function App() {
             <LoveLetter />
           </div>
 
-          {/* === SECTION 3: Memory Timeline === */}
-          <div className="section-wrapper">
-            <MemoryTimeline />
-          </div>
-
-          {/* === SECTION 4: Reasons I Love You === */}
+          {/* === SECTION 3: Reasons I Love You === */}
           <div className="section-wrapper">
             <ReasonsILoveYou />
           </div>
